@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maître Marwa Ben Bornia — Avocate à Ben Arous</title>
+<meta name="description" content="Cabinet Maître Marwa Ben Bornia, avocats et conseils à Ben Arous. Conseil et contentieux, suivi de dossier attentif, clients en Tunisie et à l'étranger. Noté 5,0 sur Google par 103 clients.">
+<meta property="og:title" content="Maître Marwa Ben Bornia — Avocate à Ben Arous">
+<meta property="og:description" content="Avocats et conseils. Noté 5,0 sur Google par 103 clients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Figtree:wght@400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#10302f;
+  --teal:#1d4e4b;
+  --paper:#f4f6f5;
+  --white:#ffffff;
+  --robe:#141617;
+  --brass:#a8875a;
+  --brass-soft:#d9c7a8;
+  --line:#d5dcda;
+  --muted:#566664;
+  --serif:"Bodoni Moda",Georgia,serif;
+  --sans:"Figtree",system-ui,sans-serif;
+  --arabic:"Amiri",serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--robe);font:400 1.0625rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;margin:0}
+h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1}
+p{margin:0 0 1em}
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:.85em 1.4em;border-radius:2px;font:600 .98rem/1 var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer}
+.btn-dark{background:var(--ink);color:var(--white)}
+.btn-dark:hover{background:var(--teal)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:var(--white)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(244,246,245,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
+.mark{display:flex;align-items:baseline;gap:.5em;text-decoration:none}
+.mark b{font:600 1.35rem/1 var(--serif)}
+.mark span{font-size:.85rem;color:var(--muted)}
+.nav{display:flex;gap:28px;align-items:center}
+.nav a{text-decoration:none;font-weight:500;font-size:.95rem}
+.nav a:not(.btn):hover{color:var(--teal);text-decoration:underline;text-underline-offset:5px}
+.menu-btn{display:none;background:none;border:0;padding:8px;cursor:pointer}
+@media (max-width:860px){
+  .nav{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:flex-start;background:var(--paper);padding:20px 24px 28px;border-bottom:1px solid var(--line);gap:18px}
+  .nav.open{display:flex}
+  .menu-btn{display:block}
+  .mark span{display:none}
+}
+
+/* hero */
+.hero{padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(3rem,7.4vw,6.2rem);line-height:.96;font-weight:400}
+.hero h1 em{display:block;font-style:normal;font-weight:600}
+.ar{font-family:var(--arabic);font-size:1.35rem;color:var(--muted);margin:22px 0 0;direction:rtl;text-align:left}
+.lede{font-size:1.2rem;max-width:34ch;margin:28px 0 36px;color:#2a3534}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.portrait{position:relative}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;background:var(--line)}
+.score-tag{position:absolute;left:-28px;bottom:32px;background:var(--white);padding:16px 20px;border-left:3px solid var(--brass);box-shadow:0 10px 30px rgba(16,48,47,.12);text-decoration:none}
+.score-tag strong{font:600 2rem/1 var(--serif);display:block}
+.score-tag small{font-size:.86rem;color:var(--muted)}
+.stars{color:var(--brass);letter-spacing:2px;font-size:.95rem}
+@media (max-width:860px){
+  .hero{padding:40px 0 56px}
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .portrait{max-width:420px}
+  .score-tag{left:12px;bottom:12px}
+}
+
+/* cabinet */
+.cabinet{padding:96px 0;background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cabinet .wrap{display:grid;grid-template-columns:5fr 6fr;gap:72px}
+.cab-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:start}
+.cab-photos img{width:100%;aspect-ratio:3/4;object-fit:cover;background:var(--line)}
+.cab-photos img{grid-column:1/-1;aspect-ratio:16/10}
+.cab-photos figcaption{grid-column:1/-1;font-size:.85rem;color:var(--muted)}
+.cab-text p{max-width:60ch}
+.cab-text h2{margin-bottom:28px}
+.pledges{list-style:none;padding:0;margin:40px 0 0;border-top:1px solid var(--line)}
+.pledges li{display:grid;grid-template-columns:180px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--line)}
+.pledges b{font:600 1.15rem/1.3 var(--serif)}
+.pledges span{color:#334140}
+@media (max-width:860px){
+  .cabinet{padding:64px 0}
+  .cabinet .wrap{grid-template-columns:1fr;gap:40px}
+  .pledges li{grid-template-columns:1fr;gap:4px}
+}
+
+/* domaines */
+.domaines{padding:96px 0}
+.dom-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:48px;flex-wrap:wrap}
+.dom-head p{max-width:46ch;color:var(--muted);margin:0}
+.dom-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0 64px;list-style:none;padding:0;margin:0}
+.dom-list li{padding:26px 0;border-top:1px solid var(--line)}
+.dom-list h3{font-size:1.45rem;margin-bottom:8px}
+.dom-list p{color:#3b4948;margin:0;max-width:52ch}
+@media (max-width:760px){.domaines{padding:64px 0}.dom-list{grid-template-columns:1fr}}
+
+/* avis */
+.avis{background:var(--ink);color:#e9efee;padding:104px 0}
+.avis .wrap{display:grid;grid-template-columns:330px 1fr;gap:64px;align-items:start}
+.avis-side{position:sticky;top:100px}
+.big-score{font:400 clamp(6rem,12vw,10rem)/.85 var(--serif);color:var(--white);margin:0}
+.avis-side .stars{font-size:1.4rem;margin:18px 0 6px;display:block}
+.avis-side p{color:#b9c9c7;margin:0 0 28px}
+.avis-side h2{font-size:1.6rem;color:var(--white);margin:0 0 12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+.chip{background:transparent;color:#dfe8e7;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:.5em 1em;font:500 .9rem/1 var(--sans);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--brass-soft);border-color:var(--brass-soft);color:var(--ink)}
+.chip:hover{border-color:var(--brass-soft)}
+.chip .n{opacity:.65;margin-left:.35em}
+.avis-links a{display:block;color:var(--brass-soft);margin-bottom:10px;font-weight:500}
+.wall{columns:2 300px;column-gap:24px}
+.quote{break-inside:avoid;margin:0 0 24px;padding:26px 26px 22px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.quote blockquote{margin:0 0 18px;font:400 1.08rem/1.6 var(--serif);color:var(--white);white-space:pre-line}
+.quote.long blockquote{font-size:1rem}
+.quote footer{display:flex;justify-content:space-between;align-items:center;font-size:.86rem;color:#a9bbb9;gap:12px}
+.quote footer b{color:#e9efee;font-weight:600}
+.more{margin-top:8px;background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.4)}
+.more:hover{background:var(--white);color:var(--ink)}
+.wall-count{color:#a9bbb9;font-size:.9rem;margin:0 0 20px}
+@media (max-width:960px){
+  .avis{padding:72px 0}
+  .avis .wrap{grid-template-columns:1fr;gap:32px}
+  .avis-side{position:static}
+}
+
+/* etapes */
+.etapes{padding:96px 0;background:var(--white);border-bottom:1px solid var(--line)}
+.etapes h2{margin-bottom:48px;max-width:20ch}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;list-style:none;padding:0;margin:0;counter-reset:s}
+.steps li{counter-increment:s;border-top:2px solid var(--ink);padding-top:22px}
+.steps li::before{content:counter(s);font:500 2.6rem/1 var(--serif);color:var(--brass);display:block;margin-bottom:14px}
+.steps h3{font-size:1.35rem;margin-bottom:8px}
+.steps p{color:#3b4948;margin:0}
+@media (max-width:760px){.etapes{padding:64px 0}.steps{grid-template-columns:1fr;gap:28px}}
+
+/* contact */
+.contact{padding:96px 0}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.contact h2{margin-bottom:24px}
+.coords{list-style:none;padding:0;margin:0 0 32px}
+.coords li{padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:110px 1fr;gap:16px}
+.coords li span{color:var(--muted);font-size:.92rem}
+.coords a{text-decoration:none;font-weight:600}
+.coords a:hover{text-decoration:underline}
+form{display:grid;gap:16px;margin-top:8px}
+label{font-weight:500;font-size:.95rem;display:grid;gap:6px}
+input,textarea,select{font:inherit;padding:.75em .9em;border:1px solid #b9c4c2;background:var(--white);border-radius:2px;color:var(--robe)}
+textarea{min-height:130px;resize:vertical}
+.form-note{font-size:.88rem;color:var(--muted);margin:0}
+.map{width:100%;height:100%;min-height:420px;border:0;background:var(--line)}
+@media (max-width:860px){.contact{padding:64px 0}.contact .wrap{grid-template-columns:1fr;gap:40px}.map{min-height:320px}}
+
+.foot{background:var(--robe);color:#b8c2c1;padding:40px 0;font-size:.9rem}
+.foot .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.foot b{color:var(--white);font-family:var(--serif);font-weight:500;font-size:1.1rem}
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:30;width:56px;height:56px;border-radius:50%;background:#1f8a5b;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.wa-float svg{width:28px;height:28px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#accueil"><b>Me Marwa Ben Bornia</b><span>Avocats et conseils</span></a>
+    <button class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#cabinet">Le cabinet</a>
+      <a href="#domaines">Domaines</a>
+      <a href="#avis">Avis clients</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-dark" href="tel:+21627855045">Appeler le cabinet</a>
+    </nav>
+  </div>
+</header>
+
+<main id="accueil">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Maître <em>Marwa Ben Bornia</em></h1>
+        <p class="ar" lang="ar">الأستاذة مروه بن برنية — محامية</p>
+        <p class="lede">Avocate à Ben Arous. Conseil et défense de vos intérêts, avec un suivi clair de votre dossier à chaque étape, en Tunisie comme depuis l'étranger.</p>
+        <div class="cta-row">
+          <a class="btn btn-dark" href="tel:+21627855045">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            27 855 045
+          </a>
+          <a class="btn btn-line" href="https://wa.me/21627855045" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+        </div>
+      </div>
+      <figure class="portrait" style="margin:0">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SWXQDKbMGgsyv5vfmtOz5ZevyGrnwNKF3ELLznnl4mvPw6CsuSWQ7DzwOCzDJUrPJpEdrN83FaJ4aVcLO4x2H_QvcPpUHFJewBiQk9KF-i_KpppIa4vQuKHk9s4eO91GtM0qR2-XfkmEAO=w900-h1125-k-no" alt="Maître Marwa Ben Bornia en robe d'avocate" referrerpolicy="no-referrer" fetchpriority="high">
+        <a class="score-tag" href="#avis">
+          <strong>5,0 <span class="stars" aria-hidden="true">★★★★★</span></strong>
+          <small>103 avis de clients sur Google</small>
+        </a>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cabinet" id="cabinet">
+    <div class="wrap">
+      <figure class="cab-photos" style="margin:0">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TrbN3xBFnIuNeLYeZQLYhgf-YPSwhR5fwo-vF23mtozAeZE57ma-CI-JKWeYUrPuIGpHRzX1H49OcZu4fYVkceDy3TEaNMh-q5SInSc1EMeAVLFU1ArEioaFal0j-2CvXpT73v=w1000-h625-k-no" alt="Immeuble Medina Centre à Ben Arous, où se trouve le cabinet" referrerpolicy="no-referrer" loading="lazy">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QAAllCsTcuIMGgs5RSusuHgictDpT-sdAGDpXndMUtGT-xDkW2Y3YmepKqn6D6_PLTNOm5OO1OBHi_PIO_3FwRoxxiiiWr7108AOraChnglAg3xU9c2cofXuKoPysAiTQxpcWq=w600-h800-k-no" alt="Salle d'accueil du cabinet" referrerpolicy="no-referrer" loading="lazy">
+        <figcaption>Medina Centre, 1er étage, bureau 2 — Ben Arous</figcaption>
+      </figure>
+      <div class="cab-text">
+        <h2>Un cabinet à taille humaine, où chaque dossier a un interlocuteur</h2>
+        <p>Le cabinet Maître Marwa Ben Bornia accompagne particuliers et entreprises en conseil comme en contentieux. Vous êtes reçu, écouté et tenu informé par votre avocate, du premier rendez-vous jusqu'à la décision.</p>
+        <p>Après chaque audience, vous recevez un compte rendu. Les questions par téléphone, e-mail ou WhatsApp obtiennent une réponse rapide, souvent dans la journée.</p>
+        <ul class="pledges">
+          <li><b>Écoute</b><span>On prend le temps de comprendre votre situation et ce qui compte pour vous avant de proposer une stratégie.</span></li>
+          <li><b>Transparence</b><span>Procédures expliquées simplement, honoraires annoncés, étapes et délais connus d'avance.</span></li>
+          <li><b>Suivi à distance</b><span>Vous vivez à l'étranger ? Votre dossier en Tunisie peut être géré de bout en bout, avec des points réguliers.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="domaines" id="domaines">
+    <div class="wrap">
+      <div class="dom-head">
+        <h2>Domaines d'intervention</h2>
+        <p>Une première consultation permet de qualifier votre affaire et d'identifier la voie la plus adaptée : négociation, médiation ou procédure.</p>
+      </div>
+      <ul class="dom-list">
+        <li><h3>Droit des affaires et des sociétés</h3><p>Création et vie de la société, contrats commerciaux, relations entre associés, conseil au quotidien des dirigeants.</p></li>
+        <li><h3>Contentieux civil et commercial</h3><p>Représentation devant les juridictions, litiges contractuels, responsabilité, procédures d'urgence.</p></li>
+        <li><h3>Recouvrement de créances</h3><p>Mise en demeure, négociation amiable, injonction de payer et exécution des décisions.</p></li>
+        <li><h3>Droit de la famille</h3><p>Divorce, pension alimentaire, garde des enfants, successions, avec discrétion et accompagnement.</p></li>
+        <li><h3>Droit immobilier</h3><p>Ventes, baux, titres fonciers, litiges de copropriété et de construction.</p></li>
+        <li><h3>Tunisiens résidant à l'étranger</h3><p>Gestion complète de vos démarches et procédures en Tunisie, sans avoir à vous déplacer.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="avis" id="avis" aria-labelledby="avis-title">
+    <div class="wrap">
+      <aside class="avis-side">
+        <p class="big-score">5,0</p>
+        <span class="stars" aria-label="5 étoiles sur 5">★★★★★</span>
+        <p>Note moyenne sur 103 avis Google</p>
+        <h2 id="avis-title">Ce que disent les clients</h2>
+        <div class="chips" role="group" aria-label="Filtrer les avis par thème"></div>
+        <div class="avis-links">
+          <a href="https://maps.app.goo.gl/faXxmx4h6JVNCtoQA" target="_blank" rel="noopener">Lire tous les avis sur Google</a>
+          <a href="https://search.google.com/local/writereview?placeid=ChIJw0yGNZc3_RIR6LBdteKlKbo" target="_blank" rel="noopener">Laisser un avis</a>
+        </div>
+      </aside>
+      <div>
+        <p class="wall-count" aria-live="polite"></p>
+        <div class="wall"></div>
+        <button class="btn more" type="button">Afficher plus d'avis</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="etapes">
+    <div class="wrap">
+      <h2>Comment se déroule votre dossier</h2>
+      <ol class="steps">
+        <li><h3>Premier rendez-vous</h3><p>Au cabinet, par téléphone ou en visio. Vous exposez la situation, on identifie les enjeux et les options.</p></li>
+        <li><h3>Stratégie et devis</h3><p>Une proposition claire : démarches, calendrier prévisionnel, honoraires. Vous décidez en connaissance de cause.</p></li>
+        <li><h3>Suivi jusqu'à la décision</h3><p>Représentation, négociation, audiences. Un point après chaque étape importante, jusqu'au règlement de l'affaire.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div>
+        <h2>Prendre rendez-vous</h2>
+        <ul class="coords">
+          <li><span>Téléphone</span><a href="tel:+21627855045">27 855 045</a></li>
+          <li><span>WhatsApp</span><a href="https://wa.me/21627855045" target="_blank" rel="noopener">+216 27 855 045</a></li>
+          <li><span>Adresse</span><div>3, Medina Centre, 1er étage, bureau 2<br>Rue Maghreb, Ben Arous 2063</div></li>
+          <li><span>Horaires</span><div>Ouverture dès 7 h, sur rendez-vous</div></li>
+        </ul>
+        <form id="rdv">
+          <label>Votre nom<input name="nom" required autocomplete="name"></label>
+          <label>Votre téléphone<input name="tel" type="tel" autocomplete="tel"></label>
+          <label>Objet
+            <select name="objet">
+              <option>Demande de consultation</option>
+              <option>Dossier en cours</option>
+              <option>Je réside à l'étranger</option>
+              <option>Autre</option>
+            </select>
+          </label>
+          <label>Votre message<textarea name="msg" required></textarea></label>
+          <button class="btn btn-dark" type="submit">Envoyer via WhatsApp</button>
+          <p class="form-note">Le message s'ouvre dans WhatsApp, prêt à être envoyé au cabinet. Rien n'est enregistré sur ce site.</p>
+        </form>
+      </div>
+      <iframe class="map" title="Plan d'accès au cabinet à Ben Arous" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=36.7420525,10.2522497&z=17&output=embed"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div><b>Cabinet Maître Marwa Ben Bornia</b><br>Avocats et conseils — Ben Arous, Tunisie</div>
+    <div>Avis publiés par des clients sur Google Maps.<br>© <span id="y"></span> Cabinet Maître Marwa Ben Bornia</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/21627855045" target="_blank" rel="noopener" aria-label="Écrire au cabinet sur WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/></svg>
+</a>
+
+<script>
+const REVIEWS = [
+ ["Dhia M.","mai 2026","Maître Marwa est une excellente avocate qui a su plaider avec conviction et professionalisme notre dossier.\nUne avocate à l'écoute de ses clients qui comprend les enjeux délicats de chaque dossier. Je vous conseille sans hésitation.\nMerci beaucoup maître et bonne continuation."],
+ ["Belhssan M.","avril 2026","Je suis très satisfait des services de Maître Marwa Ben Bornia. Son professionnalisme, sa rigueur et la qualité de son accompagnement ont été remarquables tout au long de la mission.\n\nElle a su faire preuve d’écoute, de réactivité et a apporté des conseils pertinents et adaptés à ma situation. Le suivi de mon dossier a été assuré avec sérieux et efficacité.\n\nJe recommande vivement ses services à toute personne à la recherche d’une avocate compétente et fiable."],
+ ["Brahim A.","avril 2026","Excellente expérience avec Maître Marwa. Étant au Canada, elle a géré tout mon dossier en Tunisie de A à Z avec sérieux et efficacité. Très professionnelle et réactive. Je recommande fortement !"],
+ ["Issam K.","mai 2026","Je suis content et reconnaissant d'avoir été accompagné par Maître Marwa. Un grand merci pour votre professionnalisme et pour vos conseils avisés.\nMerci encore une fois Maître.\nJe recommande ce cabinet sans hésitation."],
+ ["Wahida M.","août 2026","Je vous remercie du fond du cœur pour votre implication et votre efficacité. Votre écoute et vos conseils ont fait toute la différence pour moi. Je partage mon expérience positive sur votre page Google avec grand plaisir pour guider vos futurs clients. En vous réitérant toute ma confiance."],
+ ["Hichem N.","2025","Je suis très satisfait du suivi de mon dossier. Les conseils et échanges sont efficaces. J'ai apprécié les réponses documentées face aux phases de stress, Maître Marwa Ben Bornia a su être apaisante et professionnelle. Elle a toujours été présente et a toujours répondu à mes questions, mon stress parfois. C’est une avocate à l’écoute et cela depuis le premier jour de notre rencontre et en plus c’est une personne très humaine. Si l’on a besoin d’une avocate, c’est vers elle qu’il faut se tourner. Merci pour tout Maître & bonne continuation."],
+ ["K. S.","avril 2026","Je suis très satisfait des services de Maître Marwa.\nElle a fait preuve d’un grand professionnalisme, d’une excellente réactivité et d’une vraie écoute tout au long de mon dossier.\nSes conseils étaient clairs et rassurants.\nJe recommande sans hésitation"],
+ ["Ghali S.","2025","J'ai vraiment apprécié la réactivité du cabinet. Les réponses par email et whatsapp sont même parfois dans l'heure ! Toujours disponible en cas de questions, et très clair sur les explications. Encore merci Maître et excellente continuation."],
+ ["Maram M.","mai 2026","Esprit d'analyse, d'engagement, fermeté et bienveillance sont les qualités que Me Marwa Ben Bornia a su m'apporter. Un soutien et une collaboration bénéfique et incontournable.\nEncore merci maître."],
+ ["Boubakri I.","2025","Je recommande vivement Maître Ben Bornia Marwa et son cabinet pour leur professionnalisme et leur sérieux. Maître Ben Bornia est une avocate extrêmement compétente, toujours à l’écoute et impliquée dans le suivi des dossiers. Son sens du détail et son engagement garantissent un accompagnement juridique rigoureux et efficace. Grâce à son expertise, j’ai bénéficié de conseils précieux et d’un suivi personnalisé tout au long de ma procédure. Un grand merci pour votre travail et votre dévouement !"],
+ ["Rayen M.","mai 2026","Avocate humaine qui prend ses affaires à cœur. On ne se sent pas considéré comme un dossier. Je recommande vivement !"],
+ ["Achref L.","2024","J'ai eu recours aux services de Maître Ben Bornia à deux reprises, sa réactivité et son professionnalisme ont pleinement répondu à mes attentes pour aboutir à chaque fois à des résultats positifs. Très compétente, information et feedback immédiat après l'audience.\nJe ne peux que vous la recommander."],
+ ["Chatti H.","mai 2026","Je recommande vivement cette avocate ! C’est une femme extrêmement compétente, professionnelle et d'une grande serviabilité. Je suis satisfaite à 1000 % de son travail. Merci encore !"],
+ ["Alaeddine A.","2024","Maître Marwa est une avocate très compétente. Toujours disponible et à l'écoute de ses clients. Elle dispose d'une très grande maîtrise de ses dossiers dans plusieurs domaines juridiques.\n\nElle prend réellement le temps d'examiner chaque cas et propose un accompagnement remarquable. Je ne peux que recommander ses services !\n\nSi vous avez des questionnements sur une question, elle vous expliquera au mieux les solutions disponibles et vous guidera tout au long jusqu'à la résolution de votre problématique."],
+ ["Yasmine A.","2025","Un accompagnement qui a répondu totalement à mes attentes comprenant de l'écoute, des réponses à mes questions, de l'expertise, de la réactivité, toujours avec bienveillance et anticipation. Un service que je qualifierai de collaboration constructive, je me suis sentie en confiance dès notre premier échange. Un grand merci."],
+ ["Ghassen H.","2025","Je vous recommande vivement ce cabinet et particulièrement Maître Marwa qui excelle dans l’art de la négociation. Les tarifs sont à la hauteur de la prestation."],
+ ["Malek B.","2024","Marwa est une excellente professionnelle, démontrant compétence et engagement tout au long du processus. Sa perspicacité et son dévouement ont été des atouts précieux pour remporter mon affaire avec succès."],
+ ["Riadh G.","août 2026","Merci Maître Marwa pour votre sérieux et votre professionnalisme.\nVotre accompagnement nous a été d’une grande aide.\nJe vous souhaite beaucoup de succès dans votre carrière."],
+ ["Koukou B.","juillet 2026","Nous tenons à remercier l'avocate pour son accueil chaleureux. Elle m'a écoutée avec patience et attention et m'a prodigué de précieux conseils juridiques dès notre première séance. Je me suis sentie à l'aise et en confiance avec elle."],
+ ["Guitar L.","2024","Maître Ben Bornia est méticuleuse et très attentive aux détails ! Elle sait très bien faire son boulot et sait comment expliquer les procédures.\nJe suis très satisfait du service offert et surtout des mises à jour constantes via email et téléphone !\nMerci beaucoup."],
+ ["Anissa G.","2023","À conseiller fortement. Ce cabinet d’avocat est très efficace et réactif. De la prise de contact aux rendez-vous physiques, Maître Ben Bornia nous a bien accompagnés et a été très disponible pour répondre à nos questions avec cordialité et sourire.",4],
+ ["Mouna G.","2023","Une bonne avocate, toujours à l'écoute, toujours disponible et surtout très serviable. Ce qui m'a vraiment impressionné aussi, la rapidité dans la communication de l'information relative aux audiences. Je vous félicite pour votre professionnalisme Chère Maître."],
+ ["Abdelkader S.","2023","Merci Maître Marwa pour avoir obtenu un jugement favorable.\nJe recommande vivement cet avocat professionnel à l'écoute de ses clients."],
+ ["Faycel A.","2023","Cabinet jeune et compétent qui a su m'apporter des conseils précieux et une écoute bienveillante. Je vous remercie Maître pour le suivi de mon dossier et pour le temps consacré."],
+ ["KiGa G.","2024","Disponibilité, écoute, gentillesse, professionnalisme : des atouts plus qu'appréciables lorsque l'on est dans une situation difficile.\nMerci Maître pour le travail accompli."],
+ ["Mariem R.","2023","Très bon cabinet d'avocats, très à l'écoute, toujours disponible et très professionnel. Résultats positifs en ce qui me concerne. À recommander !"],
+ ["Ahmed J.","2025","Je souhaite une bonne continuation à Maître Marwa Ben Bornia car elle a trouvé une solution juridique à mon problème. Merci à toi Maître Ben Bornia."],
+ ["Sana L.","2024","Maître Marwa est une avocate dotée d'un grand professionnalisme et très compétente, à l'écoute de ses clients avec un excellent sens de l'analyse."],
+ ["Noura M.","2023","Excellent cabinet d'avocats, le savoir-faire et le talent de mon avocate, Me Marwa.\nJe suis complètement reconnaissante et la recommande fortement."],
+ ["Ghanmi M.","2024","On a été toujours bien accueilli, bien défendu. Prestations satisfaisantes.\nJe vous souhaite une bonne continuation."],
+ ["Aziz K.","2024","Rapide, efficace, bienveillante ! Merci pour votre écoute et votre aide.\nJe recommande vivement Maître Marwa Ben Bornia."],
+ ["Samy M.","2023","Maître Marwa Ben Bornia est l'avocate à recommander par excellence : disponibilité, empathie et surtout compétence."],
+ ["Radhia B.","2025","La meilleure des avocates, très professionnelle, toujours à l'écoute, disponible, une grande qualité de service et une compétence vérifiée."],
+ ["Olfa H.","2025","Avocate super disponible et à l'écoute, gentille et excellente communication. Bonne continuation."],
+ ["Wissal B.","2024","Professionnelle, très réactive, et surtout très à l’écoute. Je recommande vivement !"],
+ ["Chayma C.","avril 2026","Maître très professionnelle, à l’écoute et réactive. Je recommande vivement."],
+ ["Aram K.","mai 2026","Très compétente, très professionnelle, humaine.\nJe recommande vivement."],
+ ["Moussa D.","2024","Professionnelle, disponible, toujours à l’écoute, gentille, très honnête et compétente."],
+ ["Nadia M.","2023","Je tiens à remercier Maître Marwa Ben Bornia, une personne très compétente et toujours à l'écoute. Bonne continuation."],
+ ["Meriem B.","2023","Très professionnelle, toujours à l'écoute ainsi que sa compétence et son dévouement."],
+ ["Jaber A.","2023","Recommandée fortement, toujours disponible et à l'écoute. Très professionnelle."],
+ ["Ben Arfa E.","2023","Une grande qualité de service et une compétence vérifiée, je la recommande vivement."],
+ ["Eya B.","2023","Une personne compétente, honnête et à l'écoute ! Bonne continuation."],
+ ["Amina J.","2023","Qui dit professionnalisme dit Maître Ben Bornia, je la recommande vivement."],
+ ["Hosni K.","2023","Vraiment un grand bravo pour vos conseils, avec excellence."],
+ ["Bensalah H.","2024","Travail remarquable fait par Maître Marwa. Je vous remercie."],
+ ["Kekli K.","2024","Professionnelle, ponctuelle, disponible et toujours à l'écoute."],
+ ["Hachani F.","2024","Compétence, rigueur, transparence et disponibilité."],
+ ["Chirine B.","avril 2026","Maître Marwa Ben Bornia, merci pour votre bonté, votre écoute attentive, votre professionnalisme et vos compétences. Toute notre reconnaissance et notre respect."]
+];
+
+const THEMES = [
+  {id:"all",label:"Tous",test:()=>true},
+  {id:"ecoute",label:"Écoute",test:t=>/écout|humain|bienveill|empath|à l'aise|confiance/i.test(t)},
+  {id:"dispo",label:"Disponibilité",test:t=>/réactiv|disponib|rapid|dans l'heure|feedback|mises à jour|immédiat/i.test(t)},
+  {id:"comp",label:"Compétence",test:t=>/compét|expert|rigueur|analyse|maîtrise|méticul|négociation/i.test(t)},
+  {id:"res",label:"Résultats",test:t=>/jugement favorable|résultats positifs|remporter|solution|bien défendu|plaider/i.test(t)},
+  {id:"loin",label:"Depuis l'étranger",test:t=>/canada|étranger|distance/i.test(t)}
+];
+
+const wall=document.querySelector('.wall'), chips=document.querySelector('.chips'),
+      moreBtn=document.querySelector('.more'), count=document.querySelector('.wall-count');
+let theme="all", shown=8;
+
+THEMES.forEach(th=>{
+  const n=REVIEWS.filter(r=>th.test(r[2])).length; if(!n) return;
+  const b=document.createElement('button');
+  b.className='chip'; b.type='button'; b.dataset.id=th.id;
+  b.setAttribute('aria-pressed', th.id===theme);
+  b.innerHTML=`${th.label}<span class="n">${n}</span>`;
+  b.onclick=()=>{theme=th.id; shown=8; render();
+    chips.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed',c.dataset.id===theme));};
+  chips.appendChild(b);
+});
+
+function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function render(){
+  const th=THEMES.find(t=>t.id===theme), list=REVIEWS.filter(r=>th.test(r[2]));
+  wall.innerHTML=list.slice(0,shown).map(([n,d,t,s=5])=>`
+    <figure class="quote${t.length>420?' long':''}">
+      <blockquote>${esc(t)}</blockquote>
+      <footer><span><b>${esc(n)}</b> — ${d}</span><span class="stars" aria-label="${s} étoiles sur 5">${'★'.repeat(s)}${'☆'.repeat(5-s)}</span></footer>
+    </figure>`).join('');
+  count.textContent=`${Math.min(shown,list.length)} avis affichés sur ${list.length}${theme==='all'?' avis rédigés':''}`;
+  moreBtn.hidden = shown>=list.length;
+}
+moreBtn.onclick=()=>{shown+=8; render();};
+render();
+
+document.getElementById('rdv').addEventListener('submit',e=>{
+  e.preventDefault(); const f=new FormData(e.target);
+  const txt=`Bonjour Maître,\n\n${f.get('msg')}\n\n— ${f.get('nom')}${f.get('tel')?' ('+f.get('tel')+')':''}\nObjet : ${f.get('objet')}`;
+  window.open('https://wa.me/21627855045?text='+encodeURIComponent(txt),'_blank','noopener');
+});
+
+const mb=document.querySelector('.menu-btn'), nav=document.getElementById('nav');
+mb.onclick=()=>{const o=nav.classList.toggle('open'); mb.setAttribute('aria-expanded',o);};
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');mb.setAttribute('aria-expanded',false);}));
+document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
